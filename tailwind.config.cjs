@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "light-bg": "url('../public/assets/background.jpeg')",
-        "dark-bg": "url('../public/assets/black-bg.jpeg')",
+        "light-bg": "url('/new white backdrop.jpeg')",
+        "dark-bg": "url('/black background new.jpeg')",
       },
       fontFamily: {
         inter: ["inter", "serif"],
