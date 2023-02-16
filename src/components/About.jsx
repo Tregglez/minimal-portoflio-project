@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../App';
 
 const About = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+
+  const circleButton1 = theme === 'light' ? '/Circle Buttons/html.png' : '/Circle Buttons/light-html.png';
+  const circleButton2 = theme === 'light' ? '/Circle Buttons/css.png' : '/Circle Buttons/light-css.png';
+  const circleButton3 = theme === 'light' ? '/Circle Buttons/js.png' : '/Circle Buttons/light-js.png';
+  const circleButton4 = theme === 'light' ? '/Circle Buttons/rails.png' : '/Circle Buttons/light-rails.png';
+  const circleButton5 = theme === 'light' ? '/Circle Buttons/react.png' : '/Circle Buttons/light-react.png';
+  const circleButton6 = theme === 'light' ? '/Circle Buttons/rd.png' : '/Circle Buttons/light-rd.png';
+  const circleButton7 = theme === 'light' ? '/Circle Buttons/sql.png' : '/Circle Buttons/light-sql.png';
+
   return (
     <div className="w-full bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white">
       {/* Navigation */}
-      <h1 className="px-5 py-6 font-bold text-xl">
+      <h1 className="px-5 py-6 font-bold text-xl fixed">
         <a href="/" style={{ display: "inline-block" }}>
           <p className="mr-0 mb-0 text-[#CD49C0] dark:text-[#58C55C]">
-            <span className='text-black'>Home</span> //
+            <span className='text-black dark:text-white'>Home</span> //
           </p>
         </a>
         <span
           className="text-[#CD49C0] dark:text-[#58C55C]"
           style={{ display: "inline-block", margin: "0 0 0 5px", padding: "0" }}
         >
-          02
+          03
         </span>{" "}
         About
       </h1>
@@ -39,17 +51,17 @@ const About = () => {
 
         {/* Skills */}
         <div className='flex flex-wrap justify-center mt-10 mx-24'>
-          <img src="/Circle Buttons/Circle Buttons-02.png" alt="" className='circle-image sm-screen' />
-          <img src="/Circle Buttons/Circle Buttons Black-06.png" alt="" className='circle-image sm-screen' />
+          <img src={circleButton1} alt="" className='circle-image sm-screen' />
+          <img src={circleButton2} alt="" className='circle-image sm-screen' />
         </div>
         <div className='flex flex-wrap justify-center'>
-          <img src="/Circle Buttons/Circle Buttons Black-05.png" alt="" className='circle-image sm-screen' />
-          <img src="/Circle Buttons/Circle Buttons Black-04.png" alt="" className='circle-image sm-screen' />
-          <img src="/Circle Buttons/Circle Buttons Black-01.png" alt="" className='circle-image sm-screen' />
+          <img src={circleButton3} alt="" className='circle-image sm-screen' />
+          <img src={circleButton4} alt="" className='circle-image sm-screen' />
+          <img src={circleButton5} alt="" className='circle-image sm-screen' />
         </div>
         <div className='flex flex-wrap justify-center mb-10 mx-24'>
-          <img src="/Circle Buttons/Circle Buttons-03.png" alt="" className='circle-image sm-screen' />
-          <img src="/Circle Buttons/Circle Buttons Black-08.png" alt="" className='circle-image sm-screen' />
+          <img src={circleButton6} alt="" className='circle-image sm-screen' />
+          <img src={circleButton7} alt="" className='circle-image sm-screen' />
         </div>
 
         {/* Contact Me */}

@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         inter: ["inter", "serif"],
       },
+      display: ["group-hover"],
     },
   },
   plugins: [],
