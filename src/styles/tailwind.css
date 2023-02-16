@@ -14,18 +14,31 @@
   border-bottom: solid black 1px;
 }
 
-@media (min-width: 1024px) {.circle-image {
-  width: 288px;
-  height: auto;
-}}
+.navbar-image {
+  width: 96px;
+  height: 96px;
+}
 
-@media (max-width: 770px) {.sm-screen {
-  width: 192px;
-  height: auto;
-  margin: 0 15px;
-}}
+
+@media (min-width: 1024px) {
+  .circle-image {
+    width: 288px;
+    height: auto;
+  }
+
+  .navbar-image {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 @media (max-width: 770px) {
+  .sm-screen {
+    width: 192px;
+    height: auto;
+    margin: 0 15px;
+  }
+
   .sm-screen-change {
     flex-direction: column;
     width: 100%;
@@ -48,5 +61,4 @@
   .top-project {
     margin-bottom: 15px;
   }
-
 }

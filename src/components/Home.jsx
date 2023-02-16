@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { ThemeContext } from '../App'
 
 const Home = () => {
+  const [toggle, setToggle] = useState(false);
+  const handleClick = () => setToggle(!toggle);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const arrowImgSrc = theme === 'light' ? '/Black Arrow.png' : '/White Arrow.png';
+
   return (
     <div className='w-full h-screen flex justify-center items-center bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white'>
 
@@ -19,12 +26,12 @@ const Home = () => {
 
           <a href="/about" className='flex justify-center items-center'>
             <p className='underline underline-offset-8 lg:px-4'>About Me</p>
-            <img src="/Black Arrow.png" alt="about me" className='w-11' />
+            <img src={arrowImgSrc} alt="about me" className='w-11' />
           </a>
 
           <a href="/projects" className='flex justify-center items-center'>
             <p className='underline underline-offset-8 lg:px-4'>Projects</p>
-            <img src="/Black Arrow.png" alt="about me" className='w-11' />
+            <img src={arrowImgSrc} alt="about me" className='w-11' />
           </a>
         </div>
       </div>
