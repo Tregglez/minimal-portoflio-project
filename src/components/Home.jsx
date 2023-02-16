@@ -17,12 +17,14 @@ const Home = () => {
         {/* Links */}
         <div className='flex justify-between pt-10 w-full'>
 
-          <a href="/about">
+          <a href="/about" className='flex justify-center items-center'>
             <p className='underline underline-offset-8 lg:px-4'>About Me</p>
+            <img src="/Black Arrow.png" alt="about me" className='w-11' />
           </a>
 
-          <a href="/projects">
+          <a href="/projects" className='flex justify-center items-center'>
             <p className='underline underline-offset-8 lg:px-4'>Projects</p>
+            <img src="/Black Arrow.png" alt="about me" className='w-11' />
           </a>
         </div>
       </div>

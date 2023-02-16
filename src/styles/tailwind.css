@@ -6,7 +6,47 @@
   width: 256px
 }
 
+.small-text {
+  font-size: 0.85rem;
+}
+
+.btm-border {
+  border-bottom: solid black 1px;
+}
+
 @media (min-width: 1024px) {.circle-image {
   width: 288px;
   height: auto;
 }}
+
+@media (max-width: 770px) {.sm-screen {
+  width: 192px;
+  height: auto;
+  margin: 0 15px;
+}}
+
+@media (max-width: 770px) {
+  .sm-screen-change {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .sm-screen-change>div:first-child {
+    order: 1;
+  }
+
+  .sm-screen-change>div:last-child {
+    order: 2;
+  }
+
+  .sml-screen-margin {
+    margin: 0;
+    width: 100%;
+  }
+
+  .top-project {
+    margin-bottom: 15px;
+  }
+
+}
