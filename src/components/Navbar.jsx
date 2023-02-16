@@ -82,13 +82,13 @@ const Navbar = () => {
             <div>
               {theme === "light" ? (
                 <img
-                  src="/home.gif"
+                  src="/public/gifs/Home pink.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />
               ) : (
                 <img
-                  src="/greeen house.gif"
+                  src="/public/gifs/green house.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />
@@ -107,13 +107,13 @@ const Navbar = () => {
             <div>
               {theme === "light" ? (
                 <img
-                  src="/projects.gif"
+                  src="/public/gifs/com pink.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />
               ) : (
                 <img
-                  src="/greeeni.gif"
+                  src="/public/gifs/green com-crop.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />
@@ -133,13 +133,13 @@ const Navbar = () => {
             <div>
               {theme === "light" ? (
                 <img
-                  src="/about me.gif"
+                  src="/public/gifs/Projects pink.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />
               ) : (
                 <img
-                  src="/green.gif"
+                  src="/public/gifs/green human.gif"
                   alt=""
                   className="navbar-image hidden group-hover:block"
                 />

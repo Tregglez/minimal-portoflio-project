@@ -34,7 +34,7 @@ const About = () => {
 
 
       {/* Description */}
-      <div className='w-full flex flex-col justify-center items-center text-center bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white'>
+      <div className='pt-20 w-full flex flex-col justify-center items-center text-center bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white'>
         <h2 className='font-bold mt-3 text-2xl pb-2'>Hi!</h2>
         <div className='flex justify-center items-center text-center w-full h-auto pt-8 text-base'>
           <p className='w-10/12 mx-auto'>

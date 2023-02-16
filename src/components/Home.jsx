@@ -9,7 +9,7 @@ const Home = () => {
   const arrowImgSrc = theme === 'light' ? '/Black Arrow.png' : '/White Arrow.png';
 
   return (
-    <div className='w-full h-screen flex justify-center items-center bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white'>
+    <div className='px-5 w-full h-screen flex justify-center items-center bg-cover bg-light-bg dark:bg-dark-bg dark:bg-cover dark:text-white'>
 
       {/* Text in Center */}
       <div className='flex flex-col justify-center text-center'>

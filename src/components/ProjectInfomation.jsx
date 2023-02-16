@@ -18,7 +18,7 @@ const ProjectInfomation = [
     micro_description: 'The BarsBestFriend app is a...',
     description: 'The BarsBestFriend app is a mobile web application that helps pet owners find dog-friendly establishments across the country, developed as a collaborative effort to deliver a functional and user-friendly solution. The app was built using Ruby on Rails, a popular web application framework that enables rapid development and deployment of scalable web applications. With this technology stack, BarsBestFriend provides users with a seamless and intuitive experience, making it the perfect companion for pet owners on the go.',
     warning: '- Please view on either mobile, or inspect on mobile -',
-    image: '/project-images/Bars Best Friend Mockup.jpg',
+    image: '/public/project-images/Casual iPhone Mockup.jpg',
     tech_stack: 'Ruby on Rails',
     github: 'https://github.com/StephCald/Bar-Best-Friend',
     demo: 'http://www.barsbestfriend.com/'

@@ -24,7 +24,7 @@ const Projects = () => {
 
 
       {/* Projects */}
-      <div className="tabs-container flex w-full h-screen justify-between items-center sm-screen-change">
+      <div className="sm:pt-20 tabs-container flex w-full justify-between items-center sm-screen-change">
         <div className="tabs flex flex-col w-4/12 ml-24 mb-16 sml-screen-margin top-project">
           {projectInformation.map((tab, index) => (
             <button
